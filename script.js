@@ -1,4 +1,15 @@
 $(document).ready(function(){
+    let request = new XMLHttpRequest();
+    request.open("GET", "https://api.github.com/users/oliv6000/repos");
+    request.send();
+    request.onload = () => {
+        if (request.status == 200) {
+            console.log(JSON.parse(request.response));
+        } else {
+            console.log(`erroe ${request.status} ${request.statusText}`)
+        }
+    }
+
     $(window).scroll(function(){
         
         // sticky navbar on scroll script
@@ -56,7 +67,7 @@ $(document).ready(function(){
     // typing text animation script
     var typed = new Typed(".typing", {
 
-        strings: ["Programmer", "Data technician", "It enthusiast"],
+        strings: ["Developer", "Data technician", "It enthusiast"],
         typeSpeed: 50,
         backSpeed: 40,
         loop: true
@@ -65,7 +76,7 @@ $(document).ready(function(){
 
     var typed = new Typed(".typing-2", {
 
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+        strings: ["Developer", "Student"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
