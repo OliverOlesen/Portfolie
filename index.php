@@ -53,11 +53,11 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="images/profile-1.jpg" alt="">
+                    <img src="images/profile-1.jpg" alt="photo of me(Oliver<<me>>)">
                 </div>
                 <div class="column right">
                     <div class="text">I'm Oliver and I'm a <span class="typing-2"></span></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                    <p>I started programming back in 2019, and have been at it ever since. i've worked on several projects all from booking systems, to shopping systems used to ordering food. This portfolie here will give a little insight to projects i have worked on in my spare time, since i can't show what i've made for customers. I would say im generally very open and welcoming to new people, as for work enthusiasm, i tend to go very deep with what im working on, since i like to get and understanding of how everything works.</p>
                     <a href="OliverOlesenCV.pdf" target="_blank" download="OlesenCV">Download CV</a>
                 </div>
             </div>
@@ -71,14 +71,14 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+                    <p>As of now i've not worked with as many different things as i would have liked too, but my understanding with the things i have worked with feels sufficient, so there will most likely be added more languages in the future.<br>Haven't quite worked with a lot of framworks yet, since it isn't allowed at my school internship. I've previously worked with laravel, but as of now, my knowledge is limitied on it.</I></p>
                     <a href="#">Read more</a>
                 </div>
                 <div class="column right">
-                    <div class="bars">
+                <div class="bars">
                         <div class="info">
                             <span>HTML</span>
-                            <span>90%</span>
+                            <span>80%</span>
                         </div>
                         <div class="line html"></div>
                     </div>
@@ -87,19 +87,19 @@
                             <span>JavaScript</span>
                             <span>60%</span>
                         </div>
-                        <div class="line css"></div>
+                        <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>C#</span>
                             <span>80%</span>
                         </div>
-                        <div class="line js"></div>
+                        <div class="line cSharp"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>PHP</span>
-                            <span>50%</span>
+                            <span>80%</span>
                         </div>
                         <div class="line php"></div>
                     </div>
@@ -114,67 +114,17 @@
             </div>
         </div>
     </section>
-<!-- 
-
-Each work build
-<div class="card">
-    <div class="box">
-        <img src="images/profile-1.jpeg" alt="">
-        <div class="text">Someone name</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-</div>
-
- -->
-
-
-
-
-
     <!-- Work section start -->
     <section class="work" id="work">
-        <div class="max-width">
-            <h2 class="title">My work</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-1.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-2.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-3.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-4.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+        <div style="work-container">
+            <h2 class="title" >My work</h2>
+            <div class="allWork-container">
+                <div class="owl-carousel caro" id="worktable">                   
+                   
                 </div>
             </div>
         </div>
     </section>
-
     <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
@@ -227,7 +177,6 @@ Each work build
             </div>
         </div>
     </section>
-
     <script src="script.js"></script>
 </body>
 </html>

@@ -4,9 +4,67 @@ $(document).ready(function(){
     request.send();
     request.onload = () => {
         if (request.status == 200) {
-            console.log(JSON.parse(request.response));
+            let result = JSON.parse(request.response); 
+            console.log(result);
+            result.forEach(repo => {
+                let image = "";
+                console.log(repo.language);
+                switch (repo.language) {
+                    case "PHP":
+                        image = "PHP";
+                        break;
+                    case "C#":
+                        image = "CSHARP";
+                    break;
+                    case null:
+                        console.log("NOLANGO");
+                        image = "NOLANGO";
+                        break;                
+                    default:
+                        break;
+                }
+                document.getElementById("worktable").innerHTML +=
+                `
+                <div class="work-item"">
+                    <div class="container">
+                    <div style="height:150px;">
+                        <div style="height:120px;display:flex;justify-content:center;align-items: center;justify-content: center;">
+                            <img src="images/${image}.png" style="max-width:90px;" alt="Main coding language">
+                        </div>
+                    </div>
+                        <div style="inline-size: 110px;overflow-wrap: break-word;">
+                            <p>${repo.name}</p>
+                        </div>
+                        <div style="width:110px;display:flex;justify-content:center;position:absolute;bottom:18px;">
+                            <form action="${repo.html_url}" target="_blank">
+                                <button class="button-design" type="submit" style="height:28px;width:80px !important;font-size:12px;">Repo</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                `;
+            });
+
+            $(".owl-carousel").owlCarousel({
+                center: false,
+                items:2,
+                loop:true,
+                margin:0,
+                dots:false,
+                autoplay:true,
+                autoplayTimeout:3000,
+                autoplaySpeed:2000,
+                autoplayHoverPause: true,
+                stagePadding: -45,
+                responsive:{
+                    600:{
+                        items:4
+                    }
+                }
+            });
+            
         } else {
-            console.log(`erroe ${request.status} ${request.statusText}`)
+            console.log(`error ${request.status} ${request.statusText}`)
         }
     }
 
@@ -82,29 +140,4 @@ $(document).ready(function(){
         loop: true
 
     });
-
-    // owl carousel script
-    $('.carousel').owlCarousel({
-
-        margin: 20,
-        loop: true,
-        autoplay: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
-        }
-    });
-
 });
