@@ -1,6 +1,6 @@
 $(document).ready(function(){
     let request = new XMLHttpRequest();
-    request.open("GET", "https://api.github.com/users/oliv6000/repos");
+    request.open("GET", "https://api.github.com/users/OliverOlesen/repos");
     request.send();
     request.onload = () => {
         if (request.status == 200) {
@@ -15,6 +15,9 @@ $(document).ready(function(){
                         break;
                     case "C#":
                         image = "CSHARP";
+                    break;
+                    case "CSS":
+                        image = "CSS";
                     break;
                     case null:
                         console.log("NOLANGO");
