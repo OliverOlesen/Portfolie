@@ -42,7 +42,7 @@
                 <div class="text-1">Hi there, i'm</div>
                 <div class="text-2">Oliver Olesen</div>
                 <div class="text-3">And I am a <span class="typing"></span></div>
-                <a href="#contact">Hire me</a>
+                <a href="#contact">Contact me</a>
             </div>
         </div>
     </section>
@@ -58,7 +58,7 @@
                 <div class="column right">
                     <div class="text">I'm Oliver and I'm a <span class="typing-2"></span></div>
                     <p>I started programming back in 2019, and have been at it ever since. i've worked on several projects all from booking systems, to shopping systems used to ordering food. This portfolie here will give a little insight to projects i have worked on in my spare time, since i can't show what i've made for customers. I would say im generally very open and welcoming to new people, as for work enthusiasm, i tend to go very deep with what im working on, since i like to get and understanding of how everything works.</p>
-                    <a href="OliverOlesenCV.pdf" target="_blank" download="OlesenCV">Download CV</a>
+                    <a href="OliverOlesenCV.pdf" target="_blank" download="OliverOlesenCV">Download CV</a>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
                     <p>As of now i've not worked with as many different things as i would have liked too, but my understanding with the things i have worked with feels sufficient, so there will most likely be added more languages in the future.<br>Haven't quite worked with a lot of framworks yet, since it isn't allowed at my school internship. I've previously worked with laravel, but as of now, my knowledge is limitied on it.</I></p>
-                    <a href="#">Read more</a>
+                    <!-- <a href="#">Read more</a> -->
                 </div>
                 <div class="column right">
                 <div class="bars">
@@ -131,25 +131,25 @@
             <h2 class="title">Contact me</h2>
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text">Get in Touch</div>
+                    <div class="text">Get in touch</div>
                     <p>Shouldn't be to hard to get a hold of me, i do check my email fairly often, so if you have any questions just ask, you can use the template to the right, or just send me a mail on the mail bellow.</p>
                     <div class="icons">
                         <div class="row">
-                            <i class="fas fa-user"></i>
+                            <i class="fas fa-user" style="width: 20px;"></i>
                             <div class="info">
                                 <div class="head">Name</div>
                                 <div class="sub-title">Oliver Ian Olesen</div>
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt" style="width: 20px;"></i>
                             <div class="info">
                                 <div class="head">Address</div>
                                 <div class="sub-title">Denmark, Lemvig/Viborg</div>
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope" style="width: 20px;"></i>
                             <div class="info">
                                 <div class="head">Email</div>
                                 <div class="sub-title">OliverOlesen@outlook.com</div>
